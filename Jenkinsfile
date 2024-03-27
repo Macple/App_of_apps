@@ -3,7 +3,7 @@ def backendImage="xmacple/backend"
 def backendDockerTag=""
 def frontendDockerTag=""
 def dockerRegistry=""
-def registryCredentials="dockerhub"
+def registryCredentials="Dockerhub"
 
 pipeline {
     parameters {
@@ -14,7 +14,7 @@ pipeline {
     agent {
         label 'agent'
     }
-    
+
     stages {
         stage('Clean running containers') {
             steps {
