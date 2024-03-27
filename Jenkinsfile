@@ -15,6 +15,11 @@ pipeline {
         label 'agent'
     }
     stages {
+        stage('Clean running containers') {
+            steps {
+                sh "docker rm -f frontend backend"
+            }
+        }
         stage('Get Code') {
             steps {
                 checkout scm
