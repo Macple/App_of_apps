@@ -3,7 +3,7 @@ def backendImage="xmacple/backend"
 def backendDockerTag=""
 def frontendDockerTag=""
 def dockerRegistry=""
-def registryCredentials="Dockerhub"
+def registryCredentials="dockerhub"
 
 pipeline {
     parameters {
